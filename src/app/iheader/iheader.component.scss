@@ -1,0 +1,48 @@
+
+.bg-Blue {
+	background-color: #15387a;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.header-top {
+	background-color: #15387a;
+	color: #fff;
+	font-size: 16px;
+	padding: 14px 10px;
+}
+.header-top-txt{
+    position: relative;
+}
+.header-top-txt a {
+	color: #8ac4fe;
+	text-transform: uppercase;
+}
+.m-header-top-left {
+	display: none;
+}
+
+.m-header-top-left p {
+	margin: 0;
+}
+.header-icon {
+	padding-right: 10px;
+	font-size: 14px;
+}
+
+@media(max-width:1200) {
+}
+@media (max-width:991px) {
+
+}
+@media (max-width:767px) {
+    .header-top-txt {
+		display: none;
+	}
+	.m-header-top-left {
+		display: block;
+		font-size: 15px;
+		width: 100%;
+		text-align: center;
+	}
+}
