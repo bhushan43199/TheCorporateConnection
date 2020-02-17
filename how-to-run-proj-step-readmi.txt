@@ -4,6 +4,9 @@ Go to CMD and check node version using this command : node -version / node -v
 
 install angular cli using this command in CMD : npm install -g @angular/cli@latest
 
+Add angular-cli-ghpages to your project.
+	ng add angular-cli-ghpages
+
 Now, in cmd git pub project run process
  1. In CMD : git remote -v
  2. In CMD : npm install -g angular-cli-ghpages
