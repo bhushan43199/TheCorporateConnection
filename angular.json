@@ -27,9 +27,9 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [ "src/styles.scss", "node_modules/bootstrap/dist/css/bootstrap.css"
+            "styles": [ "node_modules/bootstrap/dist/css/bootstrap.css", "src/styles.scss"
             ],
-            "scripts": ["src/assets/custom.js", "node_modules/jquery/dist/jquery.js", "node_modules/bootstrap/dist/js/bootstrap.js"]
+            "scripts": [ "node_modules/jquery/dist/jquery.js", "node_modules/bootstrap/dist/js/bootstrap.js" , "src/assets/custom.js" ]
           },
           "configurations": {
             "production": {
