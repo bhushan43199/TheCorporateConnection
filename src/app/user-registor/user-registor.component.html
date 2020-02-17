@@ -1,0 +1,57 @@
+<div class="banner">
+    <div class="container">
+       <div class="register">
+          <h2>New User</h2>
+          <h2>SignUp</h2>
+          <form onsubmit="return validation()">
+             <div class="inputBox">
+                <input type="text" name="" id="username" >
+                <label for="username"><i class="fa fa-user"></i> UserName :</label>
+                <span id="usererror" class="text-danger font-weight-bold"></span>
+             </div>
+             <div class="inputBox">    
+                <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                <label><i class="fa fa-eye" aria-hidden="true"></i> Password</label> 
+                <span id="message">
+                    <span id="letter" class="invalid"> <b>lowercase </b></span>
+                    <span id="capital" class="invalid"><b>uppercase </b></span>
+                    <span id="number" class="invalid"> <b>number </b></span>
+                    <span id="length" class="invalid"> <b>Min 8 char </b></span>
+                 </span>
+          </div>
+             <div class=" inputBox">    
+                <input type="password" name="conformpass" id="conformpass"  required>
+                <span id="cpassworderror" class="text-danger font-weight-bold"></span>
+                <label><i class="fa fa-eye" aria-hidden="true"></i> Confirm Password : </label>
+                <span id="messageCpass">
+                   <span id="cpassmsg" class="invalid">Password Match</span>
+                </span>
+             </div>
+             <div class="inputBox">
+                <input type="email" name="" id="email" > 
+                <span id="emailerror" class="text-danger font-weight-bold" ></span>
+                <label><i class="fa fa-envelope" aria-hidden="true"></i> Email :</label>
+             </div>
+             <div class="inputBox">
+                <input type="text" id="mobileno" pattern="\d{3}[\-]\d{3}[\-]\d{4}" >
+                <span id="mobileerror" class="text-danger font-weight-bold"></span>
+                <label><i class="fa fa-phone" aria-hidden="true"></i> Mobile Number :</label>
+             </div>
+             <div class="inputBox addressBx">
+                <input type="text" id="address" name="address" required>
+                <span class="forgot locate"><a routerLink="#"><i class="fa fa-map-marker"></i></a></span>
+                <label><i class="fa fa-phone" aria-hidden="true"></i> Address</label>
+             </div>
+             <input type="submit" name="" class="btn btn-primary btn-block">
+             <div class="go_regster">Already have an account?<a routerLink="/indexLogin" title="Sign Up"> Sign In</a></div>
+          </form>
+       </div> 
+    </div>
+ </div>
+ <script>
+    $(document).ready(function(){
+     $(window).on( "load", function() {
+      $('.register').fadeOut().fadeIn();
+      });
+     });
+    </script>

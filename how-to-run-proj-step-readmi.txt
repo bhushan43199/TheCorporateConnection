@@ -1,0 +1,13 @@
+Install node from : https://nodejs.org/en/
+
+Go to CMD and check node version using this command : node -version / node -v
+
+install angular cli using this command in CMD : npm install -g @angular/cli@latest
+
+Now, in cmd git pub project run process
+ 1. In CMD : git remote -v
+ 2. In CMD : npm install -g angular-cli-ghpages
+ 3. In CMD : ng build --prod --base-href https://bhushan43199.github.io/TheCorporateConnection/ 
+ 4. ngh -no-silent
+
+after clone run this command : npm install --save-dev @angular-devkit/build-angular
