@@ -9,18 +9,21 @@ h1, h2, h3, h4, h5, h6,ul {
     background-size: cover;
     width: 100%;
     display: flex;
-    height: 90vh;
-    max-height: auto;
+    min-height: 1px;
+    height: auto;
     align-items: center;
     justify-content: center;
-    overflow: auto;
     position: relative;
+    padding: 100px 0px;
+
     background-position: 0% 0%;
     color: #fff;
   }
 
   .register {
-    max-width: 80%;
+    max-width: 70%;
+    height: auto;
+
     position: relative;
     margin: 0 auto;
     background: rgb(0, 0, 0, .8);
@@ -209,7 +212,10 @@ select:-webkit-autofill:focus{
 .forgot a{
   color: #03a9f4;
 }
-@media (max-width: 999px) {
+@media(max-width:1200) {
+
+}
+@media (max-width:991px) {
   #message h3 {
     font-size: 25px;
   }
@@ -218,7 +224,12 @@ select:-webkit-autofill:focus{
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width:767px) {
+  .register {
+    max-width: 100%;
+  }
+}
+@media(max-width:576px) {
   .banner {
     padding: 10px;
   }

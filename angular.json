@@ -27,9 +27,21 @@
               "src/favicon.ico",
               "src/assets"
             ],
+<<<<<<< HEAD
             "styles": [ "node_modules/bootstrap/dist/css/bootstrap.css", "src/styles.scss"
             ],
             "scripts": [ "node_modules/jquery/dist/jquery.js", "node_modules/bootstrap/dist/js/bootstrap.js" , "src/assets/custom.js" ]
+=======
+            "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.css",
+              "src/styles.scss"
+            ],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/bootstrap/dist/js/bootstrap.js",
+              "src/assets/custom.js"
+            ]
+>>>>>>> 87849994d6536112082852dded1e528522708478
           },
           "configurations": {
             "production": {
@@ -121,8 +133,16 @@
               "devServerTarget": "corporateConnection:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
-  "defaultProject": "corporateConnection"
+    }
+  },
+  "defaultProject": "corporateConnection",
+  "cli": {
+    "analytics": "42083071-81f3-4d07-a1de-02362219768b"
+  }
 }
