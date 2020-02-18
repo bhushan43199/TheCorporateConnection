@@ -1,24 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap");
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.5;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-  outline: none;
-}
-
 h1,
 h2,
 h3,
@@ -29,66 +8,97 @@ ul {
   margin: 0;
   padding: 0;
 }
-.main{
-  display: flex;
+.admin-main{
+  position: relative;
   max-width: 100%;
-  min-height: 1px;
-  min-height: 100vh;
-  max-height: auto;
-  flex-grow: 0;
-  flex-shrink: 0;
+  height: 100%;
+  z-index: 1;
+}
+.main{
+  display: block;
+  width: 100% !important;
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  height: auto;
 }
 .sidebar{
-  flex: 0 0 12%;
-  background-color: #00152c;
-  color: #fff;
+  width: 200px;
+  height: 100vh;
   position: relative;
+  display:flex;
+  flex-direction: column;
+  z-index: 1;
+  background-color: #15387a;
+  color: #fff;
   overflow: hidden;
   transition: 0.5s all;
 }
-/* .side-toggle{
-  flex: 0 0 3%;
+.main-content{
+  flex-basis: 100%;
+  height: 100vh;
+  background-color: #f1f1f1;
+  position: relative;
+  overflow-y: auto;
 }
-.side-toggle .menu li a{
-  display: none;
-} */
-.open-close{
+.hide_show{
   position: absolute;
-  right: 20px;
-  top: 20px;
-  color:#58b5fc;
-  font-size: 30px;
+  left:0;
+  top: 10px;
+  z-index: 1;
+  transition: 0.5s all;
 }
-.menu{
+.hide_show a{
+  position: relative;
+  display:inline-block;
+  color: #fff !important;
+  width: 50px;
+  height: 50px;
+  border-radius:0;
+  border-top-right-radius:50%;
+  border-bottom-right-radius:50%;
+  font-size: 22px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #ff625b;
+  transition: 0.3s ease;
+}
+.hide_show a:hover{
+  background-color: #384f79;
+}
+.Amenu-space-remov{
+  width: 0%;
+}
+.Amenu{
   margin-top: 122px;
   list-style: none;
 }
-.menu li{
-  padding: 10px; 
+.Amenu li{
+ display: block;
+}
+.Amenu li a{
+  display: block;
+  color:#fff;
+  transition: .3s all;
   border-left: 5px solid transparent;
+   padding: 10px;
   font-size: 18px;
 }
-.menu li a{
-  display: inline;
-  color:#58b5fc;
-  overflow: hidden;
-  transition: .3s all;
+.Amenu li .fa{margin-right: 10px;}
+
+.Amenu li.active a{
+  border-left: 5px solid #ff625b;
 }
-.menu li .fa{
-  margin-right: 15px;
+.Amenu li a:hover{
+  border-left: 5px solid #ff625b;
+  color: #ff625b;
 }
-.menu .active {
-  color: #fff;
-  border-left: 5px solid #58b5fc;
+.side-m-drop{
+background-color: #15387a;
+border: none;
 }
-.menu li:hover {
-  color: #fff;
-  border-left: 5px solid #58b5fc;
-}
-.main-content{
-  flex: 1 0 88%;
-  background-color: #092749;
-  position: relative;
+.side-m-drop a:hover{
+  background-color: transparent;
 }
 .main-top{
   padding: 50px 0px;
@@ -99,7 +109,7 @@ ul {
   display: inline-block;
   margin-right: 10px;
   font-size: 18px;
-  color: #fff;
+  color: #15387a;
 }
 .search-box{
   display: none;
@@ -124,14 +134,14 @@ ul {
   font-size: 18px;
 }
 .m-top-list li {
-color: #fff;
+color: #15387a;
 display: inline-block;
 }
 .m-top-logo {
   margin-left: 15px;
   width: 50px;
   height: 50px;
-  border: 3px solid #fff;
+  border: 3px solid #15387a;
   border-radius: 50%;
   }
 .m-top-logo img{
@@ -139,11 +149,22 @@ display: inline-block;
   height: 100%;
   border-radius: 50%;
 }
-
+.m-top-logo .dropdown-menu a:hover{background-color: #15387a; color: #fff;}
+.tip{margin-top: 10px;border: none; }
+.tip::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  right: 10px;
+  margin-left: -5px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #fff transparent;
+}
 .main-center{
   width: 100%;
   position: relative;
-  color: #fff;
+  color: #15387a;
 }
 .Dash-tit{
   margin-bottom: 30px;
@@ -160,6 +181,9 @@ background-color: #ff625b;
 /* background-color: #61d861; */
 background-color: #7965f1;
 }
+.lightGreen{
+  background-color: #61d861;
+}
 .content-bx{
   width: 100%;
   padding: 15px 30px;
@@ -173,15 +197,18 @@ background-color: #7965f1;
 }
 
 .content-bx a h5{
- font-size: 40px;
+ font-size: 35px;
  margin-bottom: 30px;
 }
 .content-bx a p{
-  font-size: 22px;
+  font-size: 20px;
 }
 
 @media (max-width:991px){
   .content-bx{
     margin-bottom: 30px;
   }
+}
+@media (max-width:768px){
+
 }

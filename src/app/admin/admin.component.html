@@ -1,56 +1,100 @@
+<div class="admin-main">
 <div class="main">
-    <div class="sidebar">
-       <!-- <a href="#" class="open-close fa fa-bars" aria-hidden="true"></a> -->
-       <ul class="menu">
-          <li class="active"><i class="fa fa-dashboard"></i>  <a href="#">Admin</a></li>
-          <li><i class="fa fa-user"> </i><a href="#"> User</a></li>
-          <li><i class="fa fa-user"></i> <a href="#"> Venue Provider</a></li>
-       </ul>
-    </div>
-    <div class="main-content">
-       <div class="container">
-       <div class="main-top">
-          <span class="search-box">
-             <input type="search" placeholder="Search">
-             <a class=""><i class="fa fa-search"></i></a>
-          </span>
-          <a  class="m-top-search"><i class="fa fa-search"></i></a>
-          <ul class="m-top-list">
-             <li class="view">Admin</li>
-             <li class="m-top-logo"><img src="assets/person2.png" alt=""></li>
-          </ul>
-       </div>
-       </div>
-       <div class="container">
-       <div class="main-center">
-          <h2 class="Dash-tit">Dashboard</h2>
-          <div class="row">
-             <div class="col-md-4">
-                <div class="content-bx skyblue">
-                   <a href="#">
-                   <h5><i class="fa fa-users float-left"></i>220</h5>
-                   <p>Total Users</p>
-                </a>
-                </div>
-             </div>
-             <div class="col-md-4">
-                <div class="content-bx orange">
-                   <a href="#">
-                   <h5><i class="fa fa-user float-left"></i> 220</h5>
-                   <p>Total Venue Providers</p>
-                   </a>
-                </div>
-             </div>
-             <div class="col-md-4">
-                <div class="content-bx lightBlue">
-                   <a href="#">
-                   <h5><i class="fa fa-user float-left"></i> 220</h5>
-                   <p>Total Admins</p>
-                   </a>
-                </div>
-             </div>
-          </div>
-       </div>
-       </div>
-    </div>
- </div>
+   <div class="sidebar">
+      <ul class="Amenu">
+         <li class="active"><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+         <li><a href="#"><i class="fa fa-user"> </i> Inbox</a></li>
+         <li>
+            <span class="btn-group dropdown">
+            <a href="#" data-toggle="dropdown" id="menu-drop" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle"> Projects</a>
+            <span class="dropdown-menu dropdown-menu-right side-m-drop" aria-labelledby="menu-drop" >
+               <a href="#" class="dropdown-item" >User</a>
+               <a href="#" class="dropdown-item" >Supplier</a>
+               <a href="#" class="dropdown-item" >Venue Provider</a>
+            </span>
+      </span>
+   </li>
+      </ul>
+   </div>
+   <div class="hide_show">
+      <a routerLink="/#" (click)="hide_show" id="myvideo"><</a>
+  </div>
+   <div class="main-content">
+      <div class="container">
+      <div class="main-top">
+         <span class="search-box">
+            <input type="search" placeholder="Search">
+            <a href="#"><i class="fa fa-search"></i></a>
+         </span>
+         <a href="#" class="m-top-search"><i class="fa fa-search"></i></a>
+         <ul class="m-top-list">
+            <li class="view"><a href="#"  data-toggle="popover" data-placement="bottom" data-content="Vivamus
+               sagittis lacus vel augue laoreet rutrum faucibus.">Admin (Ramu Kaka)</a></li>
+            <li class="m-top-logo">
+               <span class="btn-group dropdown">
+                  <a href="#" data-toggle="dropdown" id="profile-drop" aria-haspopup="true" aria-expanded="false">
+                     <img src="./assets/person2.png" alt="">
+                  </a>
+                  <span class="dropdown-menu dropdown-menu-right tip" aria-labelledby="profile-drop" >
+                     <a href="#" class="dropdown-item " >Signed as a <br>
+                       <span class="username">Ramu Kaka</span> </a>
+                       <div class="dropdown-divider"></div>
+                     <a href="#" class="dropdown-item" >Your Profile</a>
+                     <a href="#" class="dropdown-item" >Sign Out</a>
+                  </span>
+               </span>
+            </li>
+         </ul>
+      </div>
+      </div>
+      <div class="container">
+      <div class="main-center">
+         <h2 class="Dash-tit">Dashboard</h2>
+         <div class="row">
+            <div class="col-md-3">
+               <div class="content-bx skyblue">
+                  <a href="#">
+                  <h5><i class="fa fa-users float-left"></i>220</h5>
+                  <p>Total Users</p>
+               </a>
+               </div>
+            </div>
+            <div class="col-md-3">
+               <div class="content-bx  lightGreen">
+                  <a href="#">
+                  <h5><i class="fa fa-user float-left"></i> 220</h5>
+                  <p>Total Venue Providers</p>
+                  </a>
+               </div>
+            </div>
+            <div class="col-md-3">
+               <div class="content-bx lightBlue">
+                  <a href="#">
+                  <h5><i class="fa fa-user float-left"></i> 220</h5>
+                  <p>Total Admins</p>
+                  </a>
+               </div>
+            </div>
+            <div class="col-md-3">
+               <div class="content-bx orange">
+                  <a href="#">
+                  <h5><i class="fa fa-user float-left"></i> 220</h5>
+                  <p>Total Admins</p>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="skyblue">
+                  
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+</div>

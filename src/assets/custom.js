@@ -210,3 +210,19 @@ $(document).ready(function(){
     $('.search-box').toggle();
   });
 });
+
+
+// Admin
+$(document).ready(function(){
+  $('.hide_show a').click(function(){
+    $('.sidebar').toggleClass("Amenu-space-remov");  
+    var abc = $( "#myvideo" ).text();
+    if(abc == ">"){
+      $("#myvideo").text("<");
+      $('.hide_show a').css({"transition-delay":"0.5s","border-radius":"0","border-top-right-radius":"50%","border-bottom-right-radius":"50%"});
+    }else{
+      $("#myvideo").text(">");
+      $('.hide_show a').css({"transition-delay":"0.5s","border-radius":"0","border-top-right-radius":"50%","border-bottom-right-radius":"50%"});
+    }
+ });
+});
