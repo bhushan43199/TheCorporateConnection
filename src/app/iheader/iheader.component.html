@@ -36,7 +36,10 @@
          <ul class="menu overlay-content " >
             <li class="active tab"><a href="#Home" title="Home">Home</a></li>
             <li class="tab "><a href="#About" title="About">About</a></li>
-            <li class="tab "><a href="/src/app/admin/index.html" target="_blank" title="Project Gallery">Admin</a></li>
+
+            <!-- <li class="tab "><a href="#Services" title="Services">Services</a></li> -->
+            <li class="tab "><a  routerLink="/Admin"  title="Project Gallery">Admin</a></li>
+            <!-- -->
             <li class="tab "><a href="#footer" title="Contact Us">Contact</a></li>
             <li class="tab "><a  routerLink="/indexLogin" title="Blog">Login</a></li>
             <li class="tab "><a title="Contact Us" data-toggle="modal" data-target="#exampleModalCenter">Registor</a></li>
@@ -59,26 +62,3 @@
 </div>
  </div>
 </header>
- <!-- Modal -->
- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-   <div class="modal-dialog modal-dialog-centered" role="document">
-     <div class="modal-content">
-       <div class="modal-header">
-         <h5 class="modal-title" id="exampleModalLongTitle">Select Register</h5>
-         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-           <span aria-hidden="true">&times;</span>
-         </button>
-       </div>
-       <div class="modal-body">
-         <div class="registor-choice">
-            <a routerLink="/userreg" data-dismiss="modal" title="Sign Up For User" class="one">Sign Up For User</a>
-            <a routerLink="/venuereg" data-dismiss="modal" title="Sign Up For Venue Provider" class="two">Sign Up For Venue Provider</a>
-            <a routerLink="/venuereg" data-dismiss="modal" title="Sign Up For Supplier" class="three"> Sign Up For Supplier</a>
-         </div>
-      </div>
-       <div class="modal-footer">
-         <button type="button" class="btn btn-secondary btn-block" data-dismiss="modal">Close</button>
-       </div>
-     </div>
-   </div>
- </div>

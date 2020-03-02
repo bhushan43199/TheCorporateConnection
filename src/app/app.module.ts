@@ -11,6 +11,7 @@ import { VenueregistorComponent } from './venueregistor/venueregistor.component'
 import { UserRegistorComponent } from './user-registor/user-registor.component';
 import { IbannerComponent } from './ibanner/ibanner.component';
 import { AdminComponent } from './admin/admin.component';
+import { HomepageComponent } from './homepage/homepage.component';
 
 @NgModule({
   declarations: [
@@ -22,13 +23,33 @@ import { AdminComponent } from './admin/admin.component';
     VenueregistorComponent,
     UserRegistorComponent,
     IbannerComponent,
-    AdminComponent
+    AdminComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ]
 })
 export class AppModule { }

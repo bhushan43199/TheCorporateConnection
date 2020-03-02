@@ -24,18 +24,28 @@ h1, h2, h3, h4, h5, h6, ul, ol {
 .banner_text {
 	position: relative;
 	max-width: 700px;
-	h2 {
+	h1 {
 		font-size: 40px;
 		color: #0b258a;
         text-transform: uppercase;
-        font-weight: 600;
+		font-weight: 600;
+		margin-bottom: 15px;
 	}
-	p {
-		padding: 45px 0px;
-		font-size: 22px;
-		color: #0b258a;
-	}
+	// p {
+	// 	padding: 45px 0px;
+	// 	font-size: 22px;
+	// 	color: #0b258a;
+	// }
 }
+.full-banner{width:100%;padding-top:5px; transition: 0.5s all;}
+.full-banner a:hover{color:#fff;background-color:#0b258a}
+.full-banner a{background-color:#f77221;
+	color:#fff;
+	font-size:18px;
+	padding: 10px;
+	transition: 0.5s all;
+	display:block;
+	text-transform:uppercase;text-align:center;border-radius:3px;font-weight:700;margin:2px}
 .banner_btn {
 	min-width: 295px;
 	height: 60px;
@@ -76,6 +86,7 @@ h1, h2, h3, h4, h5, h6, ul, ol {
 	position: relative;
 	width: 100%;
 	height: auto;
+
 	.about_img {
 		width: 100%;
 		margin-top: -140px;
@@ -92,8 +103,9 @@ h1, h2, h3, h4, h5, h6, ul, ol {
 	}
 }
 .about_text {
-	padding: 97px 0px 65px;
+	position: relative;
 	color: #444444;
+	padding: 97px 0px 65px;
 	h2 {
 		font-size: 30px;
 		font-weight: 600;
@@ -128,6 +140,11 @@ h1, h2, h3, h4, h5, h6, ul, ol {
 			color: #fff;
 		}
 	}
+}
+.about-img img{
+max-width: 100%;
+padding: 97px 0px 65px;
+// height: 100px;
 }
 // about section end
 // process section start

@@ -1,0 +1,45 @@
+.registor-choice{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #15387a;
+    border-radius: 10px;
+    .one{
+        width: 33.33%;
+        padding: 20px;       
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        transition: 0.5s all;
+        text-transform: uppercase;
+        &:hover{
+            background: #f77221;
+        }
+    }
+    .two{
+        width: 33.33%;
+        text-transform: uppercase;
+        padding: 20px; 
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+        &:hover{
+            background: #f77221;
+        }
+    }
+    .three{
+        width: 33.33%;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+      text-transform: uppercase;
+      padding: 20px; 
+        &:hover{
+            background: #f77221;
+         }
+    }
+      a{
+        text-align: center;
+        color: #fff;
+      }
+  }
+
+
